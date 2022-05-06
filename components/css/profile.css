@@ -1,0 +1,29 @@
+body {
+  background-color: var(--background);
+}
+
+.profile-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-banner {
+  max-width: 100wh;
+  max-height: 50vh;
+}
+
+.profile-message path {
+  d: var(--message);
+  fill: white;
+}
+
+.profile-banner-nav {
+  max-width: 2em;
+}
+
+.profile-picture {
+  max-width: 10em;
+  border-radius: 50px;
+  padding: 10px;
+  background: var(--backgrad);
+}
