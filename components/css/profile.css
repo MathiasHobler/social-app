@@ -1,29 +1,182 @@
-body {
-  background-color: var(--background);
+:root {
+  --svg-mail-envelope: path(
+    "M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
+  );
+
+  --svg-bookmark: path(
+    "M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+  );
+
+  --profile-img-size: 7em;
+  --profile-img-inner-border: 2px;
+  --profile-img-outer-border: 2px;
+  --profile-img-border-size: calc(
+    var(--profile-img-size) + 2 * var(--profile-img-inner-border) + 2 *
+      var(--profile-img-outer-border)
+  );
 }
 
-.profile-flex-column {
+.profile-header {
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-header--bg-img {
+  max-width: 100%;
+}
+
+.profile-header--nav {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
   display: flex;
   flex-direction: column;
+  row-gap: 1em;
 }
 
-.profile-banner {
-  max-width: 100wh;
-  max-height: 50vh;
+.profile-header--nav a {
+  background-color: var(--background);
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.profile-message path {
-  d: var(--message);
-  fill: white;
+.profile-header--nav svg {
+  width: 75%;
 }
 
-.profile-banner-nav {
-  max-width: 2em;
+.profile-header--nav path {
+  fill: var(--white);
 }
 
-.profile-picture {
-  max-width: 10em;
-  border-radius: 50px;
-  padding: 10px;
+.profile-header--nav-mail path {
+  d: var(--svg-mail-envelope);
+}
+
+.profile-header--nav-bookmark path {
+  d: var(--svg-bookmark);
+}
+
+.profile-header--nav-mail.profile-header--nav-mail__new-msg::after {
+  content: "";
+  width: 20%;
+  height: 20%;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  background-color: var(--pink);
+  position: absolute;
+  top: 18%;
+  right: 12%;
+}
+
+.profile-header--data {
+  background-color: var(--background);
+  position: absolute;
+  bottom: 0;
+  height: 60%;
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--fontnorm);
+  padding-top: calc(0.5 * var(--profile-img-size) + 0.9em);
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.profile-header--data h1 {
+  font-size: 1.125rem;
+  line-height: 1.777778em;
+}
+
+.profile-header--data p {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.42857em;
+}
+
+.profile-header--location {
+  color: var(--lgray);
+  line-height: 1.14286em;
+}
+
+.profile-header--profile-img-border {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: var(--profile-img-border-size);
+  height: var(--profile-img-border-size);
+  border-radius: 50%;
   background: var(--backgrad);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-header--profile-img {
+  width: var(--profile-img-size);
+  height: var(--profile-img-size);
+  overflow: hidden;
+  border: var(--profile-img-inner-border) solid var(--background);
+  border-radius: 50%;
+}
+
+.profile-header--profile-img img {
+  width: 100%;
+}
+
+.profile-header--data--stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: calc(100% - 2 * 1em);
+  position: absolute;
+  bottom: 0.2em;
+}
+
+.profile-header--data--stats p {
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.14286em;
+}
+
+.profile-header--data--followers-label,
+.profile-header--data--following-label {
+  color: var(--lgray);
+}
+
+.profile-header--data--edit-btn {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--lgray);
+  border-radius: 50vh;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.profile-header--data--followers {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.profile-header--data--followers-label {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.profile-header--data--following {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.profile-header--data--following-label {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.profile-header--data--edit-btn {
+  grid-area: 1 / 3 / span 2;
 }

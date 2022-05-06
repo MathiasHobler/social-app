@@ -10,32 +10,48 @@
   </head>
 
   <body>
-    <header>
-      <section class="profile-header profile-flex-column">
-        <img
-          class="profile-banner"
-          src="../img/jene-stephaniuk--MCrF6hnojU-unsplash.jpg"
-          alt="Profile Banner"
-        />
-        <nav class="profile-banner-nav profile-flex-column">
-          <img src="../message.svg" alt="Message" />
-          <img src="../bookmark.svg" alt="Bookmark" />
-        </nav>
-        <img
-          class="profile-picture"
-          src="../img/profile-pic.jpeg"
-          alt="Profile Picture"
-        />
+    <header class="profile-header">
+      <img
+        class="profile-header--bg-img"
+        src="../jene-stephaniuk--MCrF6hnojU-unsplash.jpg"
+        alt="Profile Banner"
+        aria-hidden="true"
+      />
+      <nav class="profile-header--nav">
+        <a
+          class="profile-header--nav-mail profile-header--nav-mail__new-msg"
+          href=""
+          aria-label="messages"
+        >
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" />
+          </svg>
+        </a>
+        <a class="profile-header--nav-bookmark" href="" aria-label="bookmarks">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" />
+          </svg>
+        </a>
+      </nav>
+      <section class="profile-header--data">
+        <div class="profile-header--profile-img-border">
+          <div class="profile-header--profile-img">
+            <img
+              src="/social-app/components/profile-pic.jpeg"
+              alt="profile image"
+            />
+          </div>
+        </div>
         <h1>Alex Tsimikas</h1>
-        <p>Brooklyn, NY</p>
+        <p class="profile-header--location">Brooklyn, NY</p>
         <p>Writer by Profession. Artist by Passion!</p>
-      </section>
-      <section class="follower">
-        <p>2,467</p>
-        <p>Followers</p>
-        <p>1,589</p>
-        <p>Following</p>
-        <button>Edit Profile</button>
+        <section class="profile-header--data--stats">
+          <p class="profile-header--data--followers">2,467</p>
+          <p class="profile-header--data--followers-label">Followers</p>
+          <p class="profile-header--data--following">1,589</p>
+          <p class="profile-header--data--following-label">Following</p>
+          <button class="profile-header--data--edit-btn">Edit Profile</button>
+        </section>
       </section>
     </header>
   </body>
