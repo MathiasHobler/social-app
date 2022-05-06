@@ -1,0 +1,44 @@
+.image-reel {
+  background-color: var(--background);
+  max-height: 8.75em;
+  width: 21em;
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.image-reel__image {
+  flex: initial;
+  width: auto;
+  height: 100px;
+  max-width: 5em;
+  margin-right: 10px;
+  border-radius: 1em;
+  position: relative;
+}
+
+.image-reel__image--large {
+  width: auto;
+  height: 100px;
+  max-width: 5em;
+  border-radius: 1em;
+}
+
+.image-reel__image--small {
+  width: auto;
+  height: 1.8em;
+  width: 1.8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border:1px solid #0000;
+  background:
+    linear-gradient(#F62E8E,#AC1AF0) padding-box,
+    linear-gradient(#F62E8E,#AC1AF0) border-box;
+}
+}
