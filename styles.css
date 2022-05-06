@@ -2,6 +2,9 @@
 @import "./components/css/profile.css";
 @import "./components/css/alert.css";
 @import "./components/css/home.css";
+@import "./components/css/svg.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
 :root {
   --background: #181a1c;
   --backgrad: linear-gradient(90deg, #f72e8e 0%, #ac1af0 102.84%);
@@ -10,6 +13,8 @@
   --white: #ecebed;
   --dgray: #323436;
   --lgray: #727477;
+
+  --fontnorm: "Poppins", sans-serif;
 }
 
 * {
