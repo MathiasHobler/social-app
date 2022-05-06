@@ -1,0 +1,19 @@
+@import "./components/css/search.css";
+@import "./components/css/profile.css";
+@import "./components/css/alert.css";
+@import "./components/css/home.css";
+:root {
+  --background: #181a1c;
+  --backgrad: linear-gradient(90deg, #f72e8e 0%, #ac1af0 102.84%);
+  --blue: #2e8af6;
+  --pink: #f62e8e;
+  --white: #ecebed;
+  --dgray: #323436;
+  --lgray: #727477;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
