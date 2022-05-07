@@ -55,17 +55,21 @@ h1 {
 }
 
 .summary--alert {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
+  column-gap: 1em;
   margin: 0.8em 0;
   padding: 0.8em 1em;
   text-decoration: none;
   box-shadow: inset 0px -1px 0px rgba(50, 52, 54, 0.5);
 }
 
+.summary--alert--info {
+  display: flex;
+  flex-direction: column;
+}
+
 .summary--alert--icon {
-  grid-area: 1 / 1 / span 2;
+  flex-shrink: 0;
   position: relative;
   width: 2em;
   height: 2em;
@@ -132,7 +136,6 @@ h1 {
   opacity: 0.7;
   font-weight: 500;
   font-size: 0.875rem;
-  margin-left: 0.5em;
 }
 
 .summary__newest .summary--alert p {
