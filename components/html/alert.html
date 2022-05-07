@@ -8,7 +8,13 @@
 
     <title>Alert</title>
   </head>
+
   <body>
+    <header>
+      <h1>Alerts</h1>
+      <button class="alert--mark-all-btn">Mark all as read</button>
+    </header>
+
     <main>
       <section class="summary summary__newest">
         <h2>today</h2>
@@ -27,6 +33,81 @@
             liked your post.
           </p>
           <p class="summary--alert--date">10m ago</p>
+        </a>
+
+        <a
+          class="summary--alert summary--alert__like summary--alert__read"
+          href=""
+          aria-label="see the alert"
+        >
+          <div class="summary--alert--icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="currentColor" />
+            </svg>
+          </div>
+          <p>
+            <span class="summary--alert--bold"
+              >Rebecca, Daisy and +11 others</span
+            >
+            liked your post.
+          </p>
+          <p class="summary--alert--date">30m ago</p>
+        </a>
+      </section>
+
+      <section class="summary">
+        <h2>yesterday</h2>
+        <a
+          class="summary--alert summary--alert__comment"
+          href=""
+          aria-label="see the alert"
+        >
+          <div class="summary--alert--icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="currentColor" />
+            </svg>
+          </div>
+          <p>
+            <span class="summary--alert--bold"
+              >Katrina, Denver and +2 others</span
+            >
+            commented on your post.
+          </p>
+          <p class="summary--alert--date">1d ago</p>
+        </a>
+
+        <a
+          class="summary--alert summary--alert__alpha-s summary--alert__read"
+          href=""
+          aria-label="see the alert"
+        >
+          <div class="summary--alert--icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="currentColor" />
+            </svg>
+          </div>
+          <p>
+            <span class="summary--alert--bold">Savannah Wilson</span>
+            is celebrating birthday today. Drop a wish!
+          </p>
+          <p class="summary--alert--date">1d ago</p>
+        </a>
+
+        <a
+          class="summary--alert summary--alert__mention summary--alert__read"
+          href=""
+          aria-label="see the alert"
+        >
+          <div class="summary--alert--icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="currentColor" />
+            </svg>
+          </div>
+          <p>
+            <span class="summary--alert--bold">Ralph Edwards</span>
+            mentioned you in a post.
+          </p>
+          <p class="summary--alert--date">1d ago</p>
         </a>
       </section>
     </main>
