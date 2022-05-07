@@ -1,22 +1,7 @@
-.postCard {
-  max-width: 30em;
-  margin: 1em auto;
-  background-color: var(--dgray);
-}
-
-.profilepic {
-  width: 3em;
-  border-radius: 50%;
-  margin: 0.5em auto;
-}
-.postoptions {
-  margin: auto;
-}
-
 .posthead {
   display: grid;
 
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1.5em 1.5em;
   grid-template-columns: 3em 1.5em 1fr 1fr 1fr 1fr 1fr 1.3em;
 
   gap: 0px;
@@ -47,7 +32,8 @@
 }
 .posthead__userpotion path {
   d: var(--dotsVertical);
-  fill: var(--lgray);
+  fill: white;
+
   grid-row-start: 1;
   grid-column-start: 8;
 
@@ -56,13 +42,14 @@
 }
 
 .postbody {
-  color: var(--white);
+  color: var(--background);
   width: 95%;
   margin: 0.5em auto;
 }
 
 .postFooter {
   color: var(--white);
+  height: 1.5em;
   display: flex;
 }
 
