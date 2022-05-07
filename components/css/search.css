@@ -1,0 +1,98 @@
+.postCard {
+  max-width: 30em;
+  margin: 1em auto;
+  background-color: var(--dgray);
+}
+
+.profilepic {
+  width: 3em;
+  border-radius: 50%;
+  margin: 0.5em auto;
+}
+.postoptions {
+  margin: auto;
+}
+
+.posthead {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3em 1.5em 1fr 1fr 1fr 1fr 1fr 1.3em;
+
+  gap: 0px;
+  height: 100%;
+}
+.profilepic {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.username {
+  color: var(--white);
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 7;
+}
+.post_time {
+  color: var(--lgray);
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.posthead__userpotion path {
+  d: var(--dotsVertical);
+  fill: var(--lgray);
+  grid-row-start: 1;
+  grid-column-start: 8;
+
+  grid-row-end: 3;
+  grid-column-end: 9;
+}
+
+.postbody {
+  color: var(--white);
+  width: 95%;
+  margin: 0.5em auto;
+}
+
+.postFooter {
+  color: var(--white);
+  display: flex;
+}
+
+.divider {
+  color: var(--lgray);
+}
+
+.postfooter__like path {
+  d: var(--like);
+  fill: var(--lgray);
+}
+.likecounter {
+}
+
+.postfooter__comment path {
+  d: var(--comment);
+  fill: var(--lgray);
+}
+.commentcounter {
+}
+
+.postfooter__share path {
+  d: var(--share);
+  fill: var(--lgray);
+}
+
+.sharecounter {
+}
+
+.postfooter__bookmark path {
+  d: var(--bookmark);
+  fill: var(--lgray);
+}
