@@ -73,11 +73,11 @@
   d: var(--svg-profile);
 }
 
-/*
 .navbar__link--add {
-  border: 1em solid linear-gradient(#f62e8e, #ac1af0);
   border-radius: 50%;
-}*/
+  border: 1px solid #0000;
+  background: var(--backgrad) border-box;
+}
 
 .navbar__link {
   width: 2em;
