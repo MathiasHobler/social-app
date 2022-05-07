@@ -1,0 +1,25 @@
+.header {
+  background: var(--background);
+  max-width: 20.22em;
+  max-height: 2em;
+  margin: 1em auto 2em auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header--text {
+  color: var(--white);
+  font-size: 1.125rem;
+}
+
+.header--link {
+  border: 1px solid var(--lgray);
+  border-radius: 50%;
+}
+
+.header--svg path {
+  d: var(--arrowLeft);
+}
