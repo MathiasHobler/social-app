@@ -23,7 +23,8 @@
 }
 
 .profile-header--bg-img {
-  max-width: 100%;
+  width: 100%;
+  min-width: 100vw;
 }
 
 .profile-header--nav {
