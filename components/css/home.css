@@ -3,9 +3,9 @@
   max-height: 8.75em;
   width: 21em;
   display: flex;
-  flex-wrap: no-wrap;
   overflow-x: auto;
   scrollbar-width: none;
+  margin: 0 auto;
 }
 
 .image-reel__image {
@@ -37,6 +37,5 @@
   margin-right: auto;
   border-radius: 50%;
   border: 1px solid #0000;
-  background: linear-gradient(#f62e8e, #ac1af0) padding-box,
-    linear-gradient(#f62e8e, #ac1af0) border-box;
+  background: var(--backgrad) border-box;
 }
