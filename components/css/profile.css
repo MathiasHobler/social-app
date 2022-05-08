@@ -1,4 +1,6 @@
 @import "./tabnav.css";
+/* FIXME: has to be replaced with a dedicated post.css */
+@import "./search.css";
 
 :root {
   --svg-mail-envelope: path(
