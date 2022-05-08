@@ -4,9 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
 
     <title>Profile</title>
   </head>
-  <body></body>
+
+  <body>
+    <header class="profile-header">
+      <img
+        class="profile-header--bg-img"
+        src="../assets/jene-stephaniuk--MCrF6hnojU-unsplash.jpg"
+        alt="Profile Banner"
+        aria-hidden="true"
+      />
+      <nav class="profile-header--nav">
+        <a
+          class="profile-header--nav-mail profile-header--nav-mail__new-msg"
+          href=""
+          aria-label="messages"
+        >
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" />
+          </svg>
+        </a>
+        <a class="profile-header--nav-bookmark" href="" aria-label="bookmarks">
+          <svg viewBox="0 0 24 24">
+            <path fill="currentColor" />
+          </svg>
+        </a>
+      </nav>
+      <section class="profile-header--data">
+        <div class="profile-header--profile-img-border">
+          <div class="profile-header--profile-img">
+            <img src="../assets/profile-pic.jpeg" alt="profile image" />
+          </div>
+        </div>
+        <h1>Alex Tsimikas</h1>
+        <p class="profile-header--location">Brooklyn, NY</p>
+        <p>Writer by Profession. Artist by Passion!</p>
+        <section class="profile-header--data--stats">
+          <p class="profile-header--data--followers">2,467</p>
+          <p class="profile-header--data--followers-label">Followers</p>
+          <p class="profile-header--data--following">1,589</p>
+          <p class="profile-header--data--following-label">Following</p>
+          <button class="profile-header--data--edit-btn">Edit Profile</button>
+        </section>
+      </section>
+    </header>
+  </body>
 </html>
