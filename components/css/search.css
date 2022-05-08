@@ -1,8 +1,31 @@
-.postCard {
+/* General */
+
+.section {
   max-width: 30em;
   margin: 1em auto;
   background-color: var(--dgray);
 }
+
+/* Tagreel */
+
+.tagreel {
+  height: 1.75em;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding-left: 1em;
+}
+
+.tagreel--item {
+  text-decoration: none;
+  color: var(--white);
+  border: 0.1em solid var(--white);
+  padding: 0.2em 0.4em;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+/* Postings */
 
 .profilepic {
   width: 3em;
