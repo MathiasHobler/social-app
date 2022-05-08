@@ -1,0 +1,13 @@
+.tagreel {
+  background-color: var(--dgray);
+  max-width: 22em;
+}
+
+a {
+  background-color: aqua;
+  text-decoration: none;
+}
+
+body {
+  background-color: blue;
+}
