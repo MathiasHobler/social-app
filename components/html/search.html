@@ -4,9 +4,193 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/39ec6eeac7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Search</title>
   </head>
-  <body></body>
+  <body class="searchbody">
+    <main class="search_main">
+          <section class="searchbar">
+      <label for="searchbar" aria-label="Search"></label>
+      <input
+        type="text"
+        id="searchbar"
+        class="searchbar__input"
+        placeholder="Search for people, posts, tags"
+        autocomplete="off"
+        aria-label="Input search"
+      />
+      <a class="searchbar__link" href="" aria-label="Search">
+        <svg class="searchbar__svg" viewBox="0 0 24 24">
+          <path fill="currentColor" />
+        </svg>
+      </a>
+    </section>
+
+      <section class="section tagreel">
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Pictures"
+          >#Pictures</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Vacation"
+          >#Vacation</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Sport"
+          >#Sport</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Food"
+          >#Food</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to BBQ">#BBQ</a>
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Vegetables"
+          >#Vegetables</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Decoration"
+          >#Decoration</a
+        >
+      </section>
+
+      <section class="section postCard">
+        <hr class="divider" />
+        <article class="posthead">
+          <img class="profilepic" src="../proDummy.png" alt="Profile-Picture" />
+
+          <h2 class="username">Max Mustermann</h2>
+          <p class="post_time">2 hrs.ago</p>
+          <!-- <img class="postoptions" src="../dotsVertical.svg" alt="" /> -->
+          <!-- <svg class="posthead__useroption lgray">
+            <path class="posthead__useroption" fill="currentcolor"></path>
+          </svg> -->
+          <svg
+            class="testing"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"
+            />
+          </svg>
+        </article>
+        <article class="postbody">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt animi
+            deserunt, pariatur corrupti amet earum quo laboriosam tenetur maxime
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic,
+            recusandae assumenda quod adipisci et eos voluptate. Eaque cumque
+            quis praesentium.
+          </p>
+        </article>
+        <article class="postFooter">
+          <svg viewBox=" 0 0 24 24" class="postfooter__like lgray">
+            <path class="postfooter_ilke" fill="currentColor"></path>
+          </svg>
+          <p class="linkecounter">55</p>
+
+          <svg viewBox=" 0 0 24 24" class="postfooter__comment lgray">
+            <path class="postfooter_comment" fill="currentcolor"></path>
+          </svg>
+          <p class="commentcounter">22</p>
+
+          <svg viewBox=" 0 0 24 24" class="postfooter__share lgray">
+            <path class="postfooter__share" fill="currentcolor"></path>
+          </svg>
+          <p class="sharecounter">11</p>
+
+          <svg viewBox=" 0 0 24 24" class="postfooter__bookmark lgray">
+            <path class="postfooter_bookmark" fill="currentcolor"></path>
+          </svg>
+        </article>
+        <hr class="divider" />
+      </section>
+
+      <section class="section postCard">
+        <hr class="divider" />
+        <article class="posthead">
+          <img class="profilepic" src="../proDummy.png" alt="Profile-Picture" />
+
+          <h2 class="username">Anna Mustermann</h2>
+          <p class="post_time">2 hrs.ago</p>
+          <!-- <img class="postoptions" src="../dotsVertical.svg" alt="" /> -->
+          <!-- <svg viewBox="0 0 24 24" class="posthead__useroption lgray">
+            <path class="posthead__useroption" fill="currentcolor"></path>
+          </svg> -->
+          <svg
+            class="testing"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"
+            />
+          </svg>
+        </article>
+        <article class="postbody">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt animi
+            deserunt.
+          </p>
+          <img
+            class="usercontent__post"
+            src="../beach.jpg"
+            alt="Picture, postet by Anna Mustermann"
+          />
+        </article>
+        <article class="postFooter">
+          <svg viewBox=" 0 0 24 24" class="postfooter__like lgray">
+            <path class="postfooter_like" fill="currentColor"></path>
+          </svg>
+          <p class="linkecounter">55</p>
+
+          <svg viewBox=" 0 0 24 24" class="postfooter__comment lgray">
+            <path class="postfooter_comment" fill="currentcolor"></path>
+          </svg>
+          <p class="commentcounter">22</p>
+
+          <svg viewBox=" 0 0 24 24" class="postfooter__share lgray">
+            <path class="postfooter__share" fill="currentcolor"></path>
+          </svg>
+          <p class="sharecounter">11</p>
+
+          <svg viewBox=" 0 0 24 24" class="postfooter__bookmark lgray">
+            <path class="postfooter_bookmark" fill="currentcolor"></path>
+          </svg>
+        </article>
+        <hr class="divider" />
+      </section>
+    </main>
+  </body>
+  <footer>
+    <nav class="navbar">
+      <a class="navbar__link" href="../../index.html">
+        <svg class="navbar__svg navbar__svg--home" viewBox="0 0 24 24">
+          <path fill="currentColor" />
+        </svg>
+      </a>
+      <a class="navbar__link" href="./search.html">
+        <svg class="navbar__svg navbar__svg--search" viewBox="0 0 24 24">
+          <path fill="currentColor" />
+        </svg>
+      </a>
+      <a class="navbar__link navbar__link--add" href="./createPost.html">
+        <svg class="navbar__svg navbar__svg--add" viewBox="0 0 24 24">
+          <path fill="currentColor" />
+        </svg>
+      </a>
+      <a class="navbar__link" href="./alert.html">
+        <svg class="navbar__svg navbar__svg--alert" viewBox="0 0 24 24">
+          <path fill="currentColor" />
+        </svg>
+      </a>
+      <a class="navbar__link" href="./profile.html">
+        <svg class="navbar__svg navbar__svg--profile" viewBox="0 0 24 24">
+          <path fill="currentColor" />
+        </svg>
+      </a>
+    </nav>
+  </footer>
 </html>

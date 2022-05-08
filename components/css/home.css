@@ -1,3 +1,4 @@
+
 :root {
   --svg-mail-envelope: path(
     "M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"
@@ -40,4 +41,45 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  
+.image-reel {
+  background-color: var(--background);
+  max-height: 8.75em;
+  width: 21em;
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin: 0 auto;
+}
+
+.image-reel__image {
+  flex: initial;
+  width: auto;
+  height: 100px;
+  max-width: 5em;
+  margin-right: 10px;
+  border-radius: 1em;
+  position: relative;
+}
+
+.image-reel__image--large {
+  width: auto;
+  height: 100px;
+  max-width: 5em;
+  border-radius: 1em;
+}
+
+.image-reel__image--small {
+  width: auto;
+  height: 1.8em;
+  width: 1.8em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 1px solid #0000;
+  background: var(--backgrad) border-box;
 }
