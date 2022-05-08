@@ -45,8 +45,6 @@
 }
 .posthead__useroption path {
   d: var(--dotsVertical3);
-  fill: var(--lgray);
-  max-width: 2em;
 
   grid-row-start: 1;
   grid-column-start: 8;
@@ -65,7 +63,7 @@
 }
 
 .usercontent__post {
-  max-width: 28em;
+  max-width: 22.5em;
 }
 
 .postFooter {
@@ -75,33 +73,28 @@
   gap: 0.3em;
 }
 
-.divider {
-  color: var(--lgray);
-}
-.postfooter__like {
-  width: 1.5em;
-}
 .postfooter__like path {
   d: var(--like);
-  fill: var(--lgray);
 }
 
 .postfooter__comment path {
   d: var(--comment);
-  fill: var(--lgray);
 }
 
 .postfooter__share path {
   d: var(--share);
-  fill: var(--lgray);
 }
 
 .postfooter__bookmark {
   align-self: flex-end;
-  max-width: 1.5em;
   margin-left: 60%;
 }
 .postfooter__bookmark path {
   d: var(--bookmark);
+  /* fill: var(--lgray); */
+}
+
+.lgray {
   fill: var(--lgray);
+  width: 2em;
 }
