@@ -1,9 +1,37 @@
 /* General */
-
+.searchbody {
+  background-color: var(--dgray);
+}
 .section {
-  max-width: 30em;
+  max-width: 23.43em;
   margin: 1em auto;
   background-color: var(--dgray);
+}
+
+/* Searchbar */
+.searchbar {
+  position: relative;
+}
+.searchbar__icon {
+  max-width: 1em;
+  fill: var(--white);
+  z-index: 10;
+  position: absolute;
+  bottom: 0.7em;
+  left: 18em;
+}
+.searchbar--input input {
+  border-radius: 2em;
+  border-style: none;
+  width: 23.43em;
+  height: 2.75em;
+  background-color: var(--lgray);
+  color: var(--white);
+  margin-left: 2.5em;
+}
+input::placeholder {
+  color: var(--white);
+  padding: 2em 0.37em;
 }
 
 /* Tagreel */
@@ -78,7 +106,7 @@
 
 .postbody {
   color: var(--white);
-  width: 95%;
+  width: 90%;
   margin: 0.5em auto;
   display: flex;
   flex-direction: column;
@@ -86,7 +114,7 @@
 }
 
 .usercontent__post {
-  max-width: 22.5em;
+  max-width: 22em;
 }
 
 .postFooter {
@@ -120,4 +148,10 @@
 .lgray {
   fill: var(--lgray);
   width: 2em;
+}
+.testing {
+  fill: var(--lgray);
+  width: 0.4em;
+  margin-top: 0.2em;
+  margin-left: 2em;
 }

@@ -5,19 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles.css" />
+    <script
+      src="https://kit.fontawesome.com/39ec6eeac7.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Search</title>
   </head>
-  <body>
+  <body class="searchbody">
     <main class="search_main">
+      <section class="section searchbar">
+        <form class="searchbar--input" action="search">
+          <input
+            type="text"
+            aria-label="Enter your search here"
+            placeholder="Search for people, posts, tags"
+          />
+        </form>
+        <svg
+          class="searchbar__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+          <path
+            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"
+          />
+        </svg>
+      </section>
+
       <section class="section tagreel">
-        <a class="tagreel--item" href="#">#Pictures</a>
-        <a class="tagreel--item" href="#">#Vacation</a>
-        <a class="tagreel--item" href="#">#Sport</a>
-        <a class="tagreel--item" href="#">#Food</a>
-        <a class="tagreel--item" href="#">#BBQ</a>
-        <a class="tagreel--item" href="#">#Vegetables</a>
-        <a class="tagreel--item" href="#">#Decoration</a>
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Pictures"
+          >#Pictures</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Vacation"
+          >#Vacation</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Sport"
+          >#Sport</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Food"
+          >#Food</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to BBQ">#BBQ</a>
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Vegetables"
+          >#Vegetables</a
+        >
+        <a class="tagreel--item" href="#" aria-label="Hash-Link to Decoration"
+          >#Decoration</a
+        >
       </section>
 
       <section class="section postCard">
@@ -28,8 +64,18 @@
           <h2 class="username">Max Mustermann</h2>
           <p class="post_time">2 hrs.ago</p>
           <!-- <img class="postoptions" src="../dotsVertical.svg" alt="" /> -->
-          <svg class="posthead__useroption lgray">
+          <!-- <svg class="posthead__useroption lgray">
             <path class="posthead__useroption" fill="currentcolor"></path>
+          </svg> -->
+          <svg
+            class="testing"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"
+            />
           </svg>
         </article>
         <article class="postbody">
@@ -72,8 +118,18 @@
           <h2 class="username">Anna Mustermann</h2>
           <p class="post_time">2 hrs.ago</p>
           <!-- <img class="postoptions" src="../dotsVertical.svg" alt="" /> -->
-          <svg viewBox="0 0 24 24" class="posthead__useroption lgray">
+          <!-- <svg viewBox="0 0 24 24" class="posthead__useroption lgray">
             <path class="posthead__useroption" fill="currentcolor"></path>
+          </svg> -->
+          <svg
+            class="testing"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 128 512"
+          >
+            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M64 360C94.93 360 120 385.1 120 416C120 446.9 94.93 472 64 472C33.07 472 8 446.9 8 416C8 385.1 33.07 360 64 360zM64 200C94.93 200 120 225.1 120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200zM64 152C33.07 152 8 126.9 8 96C8 65.07 33.07 40 64 40C94.93 40 120 65.07 120 96C120 126.9 94.93 152 64 152z"
+            />
           </svg>
         </article>
         <article class="postbody">
