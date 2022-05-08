@@ -1,3 +1,135 @@
+
+/* General */
+.searchbody {
+  background-color: var(--dgray);
+}
+.section {
+  max-width: 23.43em;
+  margin: 1em auto;
+  background-color: var(--dgray);
+}
+/* Tagreel */
+
+.tagreel {
+  height: 1.75em;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding-left: 1em;
+}
+
+.tagreel--item {
+  text-decoration: none;
+  color: var(--white);
+  border: 0.1em solid var(--white);
+  padding: 0.2em 0.4em;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+/* Postings */
+
+.profilepic {
+  width: 3em;
+  border-radius: 50%;
+  margin: 0.5em auto;
+}
+
+.posthead {
+  display: grid;
+
+  grid-template-rows: 1.5em 1.5em;
+  grid-template-columns: 3em 1.5em 1fr 1fr 1fr 1fr 1fr 1.3em;
+
+  gap: 0px;
+  height: 3.5em;
+}
+
+.profilepic {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.username {
+  color: var(--white);
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 2;
+  grid-column-end: 7;
+}
+.post_time {
+  color: var(--lgray);
+  grid-row-start: 2;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.posthead__useroption path {
+  d: var(--dotsVertical3);
+
+  grid-row-start: 1;
+  grid-column-start: 8;
+
+  grid-row-end: 3;
+  grid-column-end: 9;
+}
+
+.postbody {
+  color: var(--white);
+  width: 90%;
+  margin: 0.5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usercontent__post {
+  max-width: 22em;
+}
+
+.postFooter {
+  color: var(--white);
+  height: 1.5em;
+  display: flex;
+  gap: 0.3em;
+}
+
+.postfooter__like path {
+  d: var(--like);
+}
+
+.postfooter__comment path {
+  d: var(--comment);
+}
+
+.postfooter__share path {
+  d: var(--share);
+}
+
+.postfooter__bookmark {
+  align-self: flex-end;
+  margin-left: 60%;
+}
+.postfooter__bookmark path {
+  d: var(--bookmark);
+  /* fill: var(--lgray); */
+}
+
+.lgray {
+  fill: var(--lgray);
+  width: 2em;
+}
+.testing {
+  fill: var(--lgray);
+  width: 0.4em;
+  margin-top: 0.2em;
+  margin-left: 2em;
+}
+
 .searchbar {
   background: var(--background);
   max-width: 20.5em;
