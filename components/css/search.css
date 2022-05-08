@@ -3,9 +3,6 @@
   max-width: 20.5em;
   height: 2.75em;
   margin: 4.25em 1.5em 0 1.5em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   position: relative;
 }
 
@@ -20,9 +17,7 @@
 }
 
 .searchbar__svg {
-  position: absolute;
   width: 75%;
-  fill: var(--lgray);
 }
 
 .searchbar__svg path {
@@ -32,10 +27,7 @@
 .searchbar__link {
   color: var(--lgray);
   width: 2em;
-  height: 2em;
   display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   right: 0;
   top: 0;
